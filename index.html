@@ -3,187 +3,315 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frigorifico Carne Boa | Acougue em Belem</title>
+    <title>Frigorifico Carne Boa | Cortes e pedidos no WhatsApp</title>
     <meta
       name="description"
-      content="Frigorifico Carne Boa em Belem do Para. Carnes de qualidade, ofertas da semana e atendimento rapido pelo WhatsApp."
+      content="Frigorifico Carne Boa em Belem do Para. Escolha seus cortes, informe o peso em quilos e envie o pedido para a Loja 01 ou Loja 02 pelo WhatsApp."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./script.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="container topbar-inner">
+    <header class="site-header">
+      <div class="container header-row">
         <a class="brand" href="#inicio" aria-label="Ir para o inicio">
           <img src="./assets/logo-carne-boa.png" alt="Logo Frigorifico Carne Boa" />
         </a>
 
-        <nav class="nav" aria-label="Menu principal">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Menu principal">
           <a href="#inicio">Inicio</a>
-          <a href="#ofertas">Ofertas</a>
-          <a href="#produtos">Produtos</a>
+          <a href="#cortes">Cortes</a>
+          <a href="#pedido">Pedido</a>
           <a href="#lojas">Lojas</a>
           <a href="#contato">Contato</a>
         </nav>
 
-        <a class="btn btn-primary" href="https://wa.me/5591981636475" target="_blank" rel="noopener noreferrer">
-          Fazer pedido
-        </a>
+        <a class="header-cta" href="#pedido">Montar pedido</a>
       </div>
     </header>
 
     <main>
       <section class="hero" id="inicio">
-        <div class="container hero-grid">
+        <div class="container hero-layout">
           <div class="hero-copy">
-            <div class="hero-badge">Qualidade e preco justo em todas as carnes</div>
-            <h1>Bem-vindo ao <span>Frigorifico Carne Boa!</span></h1>
+            <div class="eyebrow">Atendimento rapido para pedidos em telas pequenas</div>
+            <h1>Escolha o corte, informe os quilos e envie seu pedido para a loja certa.</h1>
             <p>
-              Atendimento rapido, ofertas da semana e uma vitrine digital inspirada no ambiente real da loja para deixar a marca mais forte e profissional.
+              Uma experiencia pensada para celular, com navegacao simples, cortes organizados em tabela e formulario direto para WhatsApp.
             </p>
+
             <div class="hero-actions">
-              <a class="btn btn-primary" href="https://wa.me/5591981636475" target="_blank" rel="noopener noreferrer">
-                Fazer pedido
-              </a>
-              <a class="btn btn-outline" href="#ofertas">
-                Ver ofertas
-              </a>
+              <a class="btn btn-primary" href="#pedido">Fazer pedido</a>
+              <a class="btn btn-secondary" href="#cortes">Ver cortes</a>
             </div>
-            <div class="hero-notes">
-              <span>Duas lojas</span>
-              <span>Pedido por WhatsApp</span>
-              <span>Visual renovado</span>
+
+            <div class="hero-points">
+              <span>Pedido por quilo</span>
+              <span>Loja 01 e Loja 02</span>
+              <span>Fluxo mobile-first</span>
             </div>
           </div>
 
-          <div class="hero-card">
-            <div class="hero-meat">
-              <img src="./assets/carne-alcatra-inteira.jpeg" alt="Carne fresca Carne Boa" />
+          <div class="hero-visual">
+            <div class="hero-photo-card">
+              <img src="./assets/foto-loja-1.jpeg" alt="Interior da loja Frigorifico Carne Boa" />
             </div>
-            <div class="hero-card-tag">Carne fresca, cortes especiais e atendimento direto.</div>
+
+            <div class="hero-floating hero-floating-meat">
+              <img src="./assets/carne-alcatra-inteira.jpeg" alt="Corte de carne bovina" />
+            </div>
+
+            <div class="hero-floating hero-floating-note">
+              <strong>Pedido simples</strong>
+              <span>Escolha o corte, informe o peso e envie no WhatsApp.</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section contact-section">
+      <section class="section section-soft" id="contato">
         <div class="container">
-          <h2 class="section-title decorated-title">Fale conosco pelo WhatsApp</h2>
-          <p class="section-subtitle">Duas lojas, dois atalhos diretos. Sem labirinto digital, sem frescura cosmica.</p>
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Canais diretos</p>
+              <h2>Fale com a unidade ideal</h2>
+            </div>
+          </div>
 
-          <div class="contact-grid" id="contato">
+          <div class="contact-cards">
             <a class="contact-card" href="https://wa.me/5591981636475" target="_blank" rel="noopener noreferrer">
               <div>
-                <strong>Carne Boa S1</strong>
-                <span>wa.me/5591981636475</span>
+                <strong>Loja 01</strong>
+                <span>(91) 98163-6475</span>
               </div>
-              <div class="contact-arrow">&rsaquo;</div>
+              <small>Abertura direta no WhatsApp</small>
             </a>
 
             <a class="contact-card" href="https://wa.me/5591988648944" target="_blank" rel="noopener noreferrer">
               <div>
-                <strong>Carne Boa S6</strong>
-                <span>wa.me/5591988648944</span>
+                <strong>Loja 02</strong>
+                <span>(91) 98864-8944</span>
               </div>
-              <div class="contact-arrow">&rsaquo;</div>
+              <small>Escolha esta unidade no formulario</small>
             </a>
           </div>
         </div>
       </section>
 
-      <section class="section offers" id="ofertas">
+      <section class="section section-cuts" id="cortes">
         <div class="container">
           <div class="section-heading">
-            <h2 class="section-title decorated-title">Nossas Ofertas</h2>
-            <a class="btn btn-primary btn-compact" href="#produtos">Ver todos produtos</a>
+            <div>
+              <p class="section-kicker">Tabela de cortes</p>
+              <h2>Todos os cortes organizados em uma tabela simples</h2>
+            </div>
           </div>
-          <p class="section-subtitle">Esses valores sao exemplos iniciais. Depois voces podem alimentar tudo a partir de um JSON, planilha ou CMS simples.</p>
 
-          <div class="cards" id="produtos">
-            <article class="card card-agulha">
-              <div class="card-head">Agulha</div>
-              <div class="price-tag">R$ 15,99 <small>/kg</small></div>
-              <div class="card-media">Carne bovina selecionada para o dia a dia.</div>
-              <div class="card-body">
-                <a class="btn btn-primary" href="https://wa.me/5591981636475?text=Ola!%20Quero%20pedir%20agulha." target="_blank" rel="noopener noreferrer">Pedir no WhatsApp</a>
-              </div>
-            </article>
+          <div class="cuts-grid">
+            <div class="cuts-overview">
+              <article class="spotlight-card">
+                <img src="./assets/carne-contra-file.jpeg" alt="Contra file Frigorifico Carne Boa" />
+                <div>
+                  <h3>Cortes selecionados</h3>
+                  <p>Visual limpo para consulta rapida, sem preco na tela e com foco em fazer o pedido.</p>
+                </div>
+              </article>
 
-            <article class="card card-frango">
-              <div class="card-head">Frango</div>
-              <div class="price-tag">R$ 9,99 <small>/kg</small></div>
-              <div class="card-media">Opcao pratica para compras rapidas e ofertas.</div>
-              <div class="card-body">
-                <a class="btn btn-primary" href="https://wa.me/5591981636475?text=Ola!%20Quero%20pedir%20frango." target="_blank" rel="noopener noreferrer">Pedir no WhatsApp</a>
-              </div>
-            </article>
+              <article class="info-card">
+                <h3>Como funciona</h3>
+                <p>1. Escolha o corte na tabela.</p>
+                <p>2. Informe o peso desejado em kg.</p>
+                <p>3. Selecione Loja 01 ou Loja 02.</p>
+                <p>4. Envie tudo pronto pelo WhatsApp.</p>
+              </article>
+            </div>
 
-            <article class="card card-picanha">
-              <div class="card-head">Picanha</div>
-              <div class="price-tag">R$ 53,99 <small>/kg</small></div>
-              <div class="card-media">Corte nobre com atendimento direto pelo WhatsApp.</div>
-              <div class="card-body">
-                <a class="btn btn-primary" href="https://wa.me/5591988648944?text=Ola!%20Quero%20pedir%20picanha." target="_blank" rel="noopener noreferrer">Pedir no WhatsApp</a>
-              </div>
-            </article>
-
-            <article class="card card-costela">
-              <div class="card-head">Costela</div>
-              <div class="price-tag">R$ 11,99 <small>/kg</small></div>
-              <div class="card-media">Ideal para promocao semanal e pedidos em volume.</div>
-              <div class="card-body">
-                <a class="btn btn-primary" href="https://wa.me/5591988648944?text=Ola!%20Quero%20pedir%20costela." target="_blank" rel="noopener noreferrer">Pedir no WhatsApp</a>
-              </div>
-            </article>
+            <div class="cuts-table-wrap">
+              <table class="cuts-table">
+                <thead>
+                  <tr>
+                    <th>Corte</th>
+                    <th>Categoria</th>
+                    <th>Indicacao</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Agulha</td>
+                    <td>Bovino</td>
+                    <td>Panela e cozidos</td>
+                  </tr>
+                  <tr>
+                    <td>Alcatra</td>
+                    <td>Bovino</td>
+                    <td>Bifes e grelha</td>
+                  </tr>
+                  <tr>
+                    <td>Contra file</td>
+                    <td>Bovino</td>
+                    <td>Churrasco e bifes</td>
+                  </tr>
+                  <tr>
+                    <td>Costela</td>
+                    <td>Bovino</td>
+                    <td>Assados longos</td>
+                  </tr>
+                  <tr>
+                    <td>Coxao mole</td>
+                    <td>Bovino</td>
+                    <td>Bifes e rolamentos</td>
+                  </tr>
+                  <tr>
+                    <td>Fraldinha</td>
+                    <td>Bovino</td>
+                    <td>Grelha e churrasco</td>
+                  </tr>
+                  <tr>
+                    <td>Musculo</td>
+                    <td>Bovino</td>
+                    <td>Caldos e cozidos</td>
+                  </tr>
+                  <tr>
+                    <td>Picanha</td>
+                    <td>Bovino</td>
+                    <td>Churrasco</td>
+                  </tr>
+                  <tr>
+                    <td>Peito</td>
+                    <td>Bovino</td>
+                    <td>Defumados e cozidos</td>
+                  </tr>
+                  <tr>
+                    <td>Frango inteiro</td>
+                    <td>Aves</td>
+                    <td>Forno e assados</td>
+                  </tr>
+                  <tr>
+                    <td>Coxa e sobrecoxa</td>
+                    <td>Aves</td>
+                    <td>Forno e frituras</td>
+                  </tr>
+                  <tr>
+                    <td>File de peito</td>
+                    <td>Aves</td>
+                    <td>Grelha e dia a dia</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section store-wrap" id="lojas">
-        <div class="container">
-          <div class="section-heading">
-            <h2 class="section-title store-title decorated-title">Conheca Nossas Lojas</h2>
-            <a class="btn btn-primary btn-compact" href="https://www.instagram.com/frigorificocarneboa_/" target="_blank" rel="noopener noreferrer">Ver perfil</a>
+      <section class="section section-order" id="pedido">
+        <div class="container order-layout">
+          <div class="order-copy">
+            <p class="section-kicker">Formulario de pedido</p>
+            <h2>Monte o pedido e envie com um toque</h2>
+            <p>
+              Preencha seu nome, escolha o corte, informe quantos quilos deseja e selecione para qual loja o pedido deve ser enviado.
+            </p>
           </div>
-          <p class="section-subtitle store-subtitle">
-            Perfil visual forte, atendimento simples e espaco para evoluir para catalogo completo, promocoes semanais e integracao com pedidos.
-          </p>
 
-          <div class="store-grid">
-            <div class="profile-card">
-              <div class="profile-card-top">
-                <img src="./assets/logo-carne-boa.png" alt="Perfil do Frigorifico Carne Boa" />
-                <div>
-                  <h3>@frigorificocarneboa_</h3>
-                  <p>(91) 98163-6475 / 98864-8944</p>
-                  <p>Duas lojas na Marambaia - Belem, Para</p>
-                </div>
+          <form class="order-form" id="order-form">
+            <div class="field-group">
+              <label for="customer-name">Seu nome</label>
+              <input id="customer-name" name="customer-name" type="text" placeholder="Digite seu nome" required />
+            </div>
+
+            <div class="field-grid">
+              <div class="field-group">
+                <label for="customer-phone">Telefone</label>
+                <input id="customer-phone" name="customer-phone" type="tel" placeholder="(91) 90000-0000" required />
               </div>
 
-              <p>
-                Compras no varejo, ofertas, carnes frescas e contato direto pelo Instagram e WhatsApp. Essa area pode virar depois um bloco com endereco, horario e mapa.
-              </p>
-
-              <div class="store-actions">
-                <a class="mini-btn" href="https://wa.me/5591981636475" target="_blank" rel="noopener noreferrer">Carne Boa S1</a>
-                <a class="mini-btn" href="https://wa.me/5591988648944" target="_blank" rel="noopener noreferrer">Carne Boa S6</a>
+              <div class="field-group">
+                <label for="order-store">Loja</label>
+                <select id="order-store" name="order-store" required>
+                  <option value="5591981636475">Loja 01</option>
+                  <option value="5591988648944">Loja 02</option>
+                </select>
               </div>
             </div>
 
-            <div class="gallery">
-              <img src="./assets/logo-carne-boa.png" alt="Marca Carne Boa" />
-              <img src="./assets/logo-carne-boa.png" alt="Logo Carne Boa" />
-              <div class="gallery-panel">
-                Atendimento rapido, ofertas semanais e duas lojas para pedidos diretos.
+            <div class="field-grid">
+              <div class="field-group">
+                <label for="order-cut">Corte desejado</label>
+                <select id="order-cut" name="order-cut" required>
+                  <option value="">Selecione um corte</option>
+                  <option>Agulha</option>
+                  <option>Alcatra</option>
+                  <option>Contra file</option>
+                  <option>Costela</option>
+                  <option>Coxao mole</option>
+                  <option>Fraldinha</option>
+                  <option>Musculo</option>
+                  <option>Picanha</option>
+                  <option>Peito</option>
+                  <option>Frango inteiro</option>
+                  <option>Coxa e sobrecoxa</option>
+                  <option>File de peito</option>
+                </select>
               </div>
+
+              <div class="field-group">
+                <label for="order-weight">Peso desejado em kg</label>
+                <input id="order-weight" name="order-weight" type="number" min="0.5" step="0.5" placeholder="Ex: 2.5" required />
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="order-notes">Observacoes</label>
+              <textarea id="order-notes" name="order-notes" rows="4" placeholder="Ex: cortar em bifes, separar gordura, entregar hoje..."></textarea>
+            </div>
+
+            <button class="btn btn-primary form-submit" type="submit">Enviar pedido no WhatsApp</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-stores" id="lojas">
+        <div class="container stores-layout">
+          <div class="stores-copy">
+            <p class="section-kicker">Nossas unidades</p>
+            <h2>Duas lojas prontas para atender</h2>
+            <p>
+              A marca agora tem uma estrutura visual mais clara para navegacao em telas pequenas, mantendo o acesso rapido as duas unidades.
+            </p>
+
+            <div class="store-list">
+              <article class="store-item">
+                <strong>Loja 01</strong>
+                <span>WhatsApp: (91) 98163-6475</span>
+              </article>
+              <article class="store-item">
+                <strong>Loja 02</strong>
+                <span>WhatsApp: (91) 98864-8944</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="stores-gallery">
+            <div class="store-photo">
+              <img src="./assets/foto-loja-1.jpeg" alt="Ambiente interno da loja Carne Boa" />
+            </div>
+            <div class="store-logo-card">
+              <img src="./assets/logo-carne-boa.png" alt="Logo Carne Boa" />
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="site-footer">
       <div class="container footer-row">
         <div>
           <strong>Frigorifico Carne Boa</strong>
@@ -193,22 +321,16 @@
 
         <nav class="footer-nav" aria-label="Menu do rodape">
           <a href="#inicio">Inicio</a>
-          <a href="#ofertas">Ofertas</a>
-          <a href="#produtos">Produtos</a>
+          <a href="#cortes">Cortes</a>
+          <a href="#pedido">Pedido</a>
           <a href="#lojas">Lojas</a>
           <a href="#contato">Contato</a>
         </nav>
       </div>
     </footer>
 
-    <a
-      class="floating-whatsapp"
-      href="https://wa.me/5591981636475"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Abrir WhatsApp"
-    >
-      &#10018;
-    </a>
+    <a class="floating-whatsapp" href="#pedido" aria-label="Ir para o formulario de pedido">+</a>
+
+    <script src="./script.js"></script>
   </body>
 </html>

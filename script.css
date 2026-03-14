@@ -421,6 +421,11 @@ textarea {
 .contact-card {
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 148px;
   padding: 20px;
 }
 
@@ -481,6 +486,12 @@ textarea {
   display: flex;
   align-items: center;
   gap: 14px;
+  width: 100%;
+}
+
+.social-button-content > div {
+  flex: 1;
+  min-width: 0;
 }
 
 .social-icon {
@@ -493,6 +504,7 @@ textarea {
   background: rgba(255, 255, 255, 0.16);
   border: 1px solid rgba(255, 255, 255, 0.26);
   backdrop-filter: blur(8px);
+  box-shadow: 0 10px 20px rgba(12, 10, 9, 0.12);
 }
 
 .social-icon svg {
@@ -515,8 +527,10 @@ textarea {
 
 .contact-card small {
   display: block;
-  margin-top: 10px;
+  margin-top: auto;
   font-size: 0.92rem;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .whatsapp-button strong,
@@ -526,6 +540,36 @@ textarea {
 .instagram-button span,
 .instagram-button small {
   color: var(--white);
+}
+
+.whatsapp-button small,
+.instagram-button small {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 767px) {
+  .contact-card {
+    min-height: 0;
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .social-button-content {
+    align-items: flex-start;
+  }
+
+  .contact-card strong {
+    font-size: 1.16rem;
+  }
+
+  .contact-card span {
+    font-size: 0.98rem;
+    line-height: 1.4;
+  }
+
+  .contact-card small {
+    font-size: 0.88rem;
+  }
 }
 
 .location-grid {

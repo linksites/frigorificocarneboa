@@ -306,9 +306,16 @@ textarea {
   box-shadow: 0 12px 24px rgba(165, 35, 34, 0.22);
 }
 
+.btn-primary.form-submit {
+  color: var(--white);
+}
+
 .btn-primary:visited,
 .btn-primary:hover,
 .btn-primary:focus,
+.btn-primary.form-submit:visited,
+.btn-primary.form-submit:hover,
+.btn-primary.form-submit:focus,
 .header-cta:visited,
 .header-cta:hover,
 .header-cta:focus {

@@ -184,7 +184,7 @@ const category = document.querySelector('#catalog-category');
 function productCategory(name) {
   if (/figado|rabada/i.test(name)) return 'Miúdos';
   if (/linguica|toscana/i.test(name)) return 'Linguiças';
-  if (/frango|coxa|asa|drumette|file de peito|peito com osso/i.test(name)) return 'Aves';
+  if (/frango|\bcoxa\b|sobrecoxa|\basa\b|drumette|file de peito|peito com osso/i.test(name)) return 'Aves';
   return 'Bovinos';
 }
 function renderCatalog() {
@@ -197,7 +197,11 @@ function renderCatalog() {
     const title = document.createElement('strong'); title.textContent = name;
     const button = document.createElement('button'); button.type = 'button'; button.textContent = '+ 1 kg'; button.setAttribute('aria-label', `Adicionar 1 kg de ${name}`);
     button.addEventListener('click', () => { addItemToCart(name,1); document.querySelector('#catalog-feedback').textContent = `${name}: 1 kg adicionado ao carrinho.`; });
-    row.append(title,button); list.append(row);
+    const categoryLabel = document.createElement('small'); categoryLabel.textContent = productCategory(name) + ' · vendido por kg';
+    const details = document.createElement('div'); details.append(categoryLabel,title);
+    const imagePath = name === 'Alcatra' ? 'assets/carne-alcatra-inteira.jpeg' : name === 'Contra file' ? 'assets/carne-contra-file.jpeg' : null;
+    if (imagePath) { const photo = document.createElement('img'); photo.src=imagePath; photo.alt=name; photo.loading='lazy'; photo.width=360; photo.height=240; row.append(photo); row.classList.add('has-product-photo'); }
+    row.append(details,button); list.append(row);
   }
   if (!filtered.length) list.textContent = 'Nenhum corte encontrado.';
 }

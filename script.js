@@ -201,8 +201,16 @@ function renderCatalog() {
     button.addEventListener('click', () => { addItemToCart(name,1); document.querySelector('#catalog-feedback').textContent = `${name}: 1 kg adicionado ao carrinho.`; });
     const categoryLabel = document.createElement('small'); categoryLabel.textContent = productCategory(name) + ' · vendido por kg';
     const details = document.createElement('div'); details.append(categoryLabel,title);
-    const imagePath = name === 'Alcatra' ? 'assets/carne-alcatra-inteira.jpeg' : name === 'Contra file' ? 'assets/carne-contra-file.jpeg' : null;
+    const externalPhotos = {
+      'Asa de frango': {src:'assets/asas-commons.jpg',author:'ProjectManhattan',page:'https://commons.wikimedia.org/wiki/File:Raw_chicken_wings.jpg'},
+      'File mignon': {src:'assets/file-mignon-commons.jpg',author:'Rangermike',page:'https://commons.wikimedia.org/wiki/File:Beef_tenderloin.jpg'}
+    };
+    const external = externalPhotos[name];
+    const imagePath = external?.src || (name === 'Alcatra' ? 'assets/carne-alcatra-inteira.jpeg' : name === 'Contra file' ? 'assets/carne-contra-file.jpeg' : null);
     if (imagePath) { const photo = document.createElement('img'); photo.src=imagePath; photo.alt=name; photo.loading='lazy'; photo.width=360; photo.height=240; row.append(photo); row.classList.add('has-product-photo'); }
+    if (external) {
+      const credit = document.createElement('a'); credit.href=external.page; credit.target='_blank'; credit.rel='noopener noreferrer'; credit.textContent=`Foto ilustrativa · ${external.author} · CC BY-SA 3.0`; credit.className='photo-credit'; row.append(credit);
+    }
     row.append(details,button); list.append(row);
   }
   if (!filtered.length) list.textContent = 'Nenhum corte encontrado.';

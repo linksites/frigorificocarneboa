@@ -1,0 +1,26 @@
+/* Carne Boa: blue identity inspired by the existing logo. */
+:root{--bg:#eef4fc;--surface:rgba(255,255,255,.94);--surface-strong:#fff;--white:#fff;--ink:#132b52;--muted:#4e6480;--accent:#f2ca35;--accent-soft:#fff4bc;--forest:#1253b1;--forest-soft:#dceaff;--line:rgba(20,68,143,.16);--shadow:0 20px 44px rgba(10,49,110,.12);--shadow-soft:0 8px 24px rgba(10,49,110,.08)}
+body{background:linear-gradient(180deg,#f6f9ff,#e6effc)}
+.site-header{background:#073b8e;border-bottom:3px solid #f2ca35;backdrop-filter:none}
+.main-nav a{color:#fff}
+.header-cta{background:#f2ca35;color:#092e68;box-shadow:none}
+.hero{background-color:#0d4ca5}
+.hero-points span{border-color:#f2ca3570}
+.section-soft{background:#e3edfc}
+.section-kicker{background:#d5e5ff;color:#123f86}
+.section-heading h2,.stores-copy h2{color:#103b7b}
+.info-card,.order-form,.store-item{border-color:#bed2f1}
+.section-location{background:#f5f8ff}
+.section-order{background:#dfeafb}
+.cart-rule{background:#fff4bc;border-color:#e0bd39;color:#183c72}
+.cart-rule strong{color:#103b7b}
+.cart-panel{background:#edf4ff;border-color:#bfd2ee}
+.cart-stepper{background:#0d4ca5;color:#fff}
+.btn-neutral{background:#d6e6ff;color:#103b7b}
+.section-stores{background:#edf3ff}
+.site-footer{background:#073574;color:#fff}
+.footer-nav a{color:#e0ebff}
+.btn-primary{background:#b52127;color:#fff}
+.btn-primary:hover{background:#8f171d}
+@media(min-width:1024px){.hero::after{background:linear-gradient(90deg,rgba(5,35,87,.92),rgba(8,57,133,.65) 55%,rgba(8,57,133,.22))}}
+@media(max-width:1023px){.main-nav{background:#073b8e}.main-nav a{color:#fff}}

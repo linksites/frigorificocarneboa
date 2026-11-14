@@ -1,12 +1,192 @@
-<!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Frigorífico Carne Boa | Cortes e pedidos em Belém</title><meta name="description" content="Frigorífico Carne Boa em Belém. Escolha cortes bovinos, aves, linguiças e miúdos e solicite orçamento pelo WhatsApp da Loja 01 ou Loja 02."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="storefront.css?v=20261114-5"></head>
-<body><a class="skip" href="#catalog">Ir para os cortes</a>
-<div class="topbar">Belém, Pará <span>Orçamento e disponibilidade pelo WhatsApp</span></div>
-<header class="site-header"><div class="container header-row"><a class="brand" href="#inicio" aria-label="Carne Boa, início"><img src="assets/logo-carne-boa.png" width="158" height="90" alt="Frigorífico Carne Boa"></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">Menu</button><nav id="main-nav" class="main-nav" aria-label="Principal"><a href="#catalog">Nossos cortes</a><a href="#lojas">Unidades</a><a href="#localizacao">Como chegar</a></nav><a class="header-cta" href="#carrinho">Meu pedido</a></div></header>
-<main><section id="inicio" class="hero"><div class="container hero-layout"><div class="hero-copy"><p class="eyebrow">DO BALCÃO PARA SUA MESA</p><h1>Carne Boa.<br>Para todos os dias.</h1><p>Cortes para a refeição da família e para reunir os amigos no churrasco. Escolha o que precisa e converse com a nossa equipe.</p><a class="btn btn-primary" href="#catalog">Escolher meus cortes <span aria-hidden="true">→</span></a><div class="hero-points"><span>Pedido por quilo</span><span>Duas unidades</span><span>Atendimento direto</span></div></div><figure><img src="assets/foto-loja-1.jpeg" alt="Interior da loja Frigorífico Carne Boa" width="800" height="600" fetchpriority="high"><figcaption>Frigorífico Carne Boa · Belém/PA</figcaption></figure></div></section>
-<div class="steps container"><p><b>01</b> Escolha seus cortes</p><p><b>02</b> Ajuste os quilos</p><p><b>03</b> Consulte a loja no WhatsApp</p></div>
-<section class="section shop" id="carrinho"><div class="container"><div class="section-heading"><p class="eyebrow">NOSSO BALCÃO ONLINE</p><h2>O próximo almoço começa aqui.</h2><p>Adicione à sua lista. A loja confirma estoque, preparo, peso final e valores antes de fechar o pedido.</p></div><div class="shop-grid"><div id="catalog" class="catalog-panel"><div class="catalog-tools"><label for="catalog-search">Qual corte você procura?<input id="catalog-search" type="search" placeholder="Buscar por nome…"></label><label for="catalog-category">Categoria<select id="catalog-category"><option>Todos</option><option>Bovinos</option><option>Aves</option><option>Linguiças</option><option>Miúdos</option></select></label></div><p id="catalog-feedback" role="status" aria-live="polite"></p><div id="catalog-items" class="catalog-items"></div></div><aside class="order-sidebar"><h2>Sua lista de compras</h2><form class="order-form" id="order-form">
-            <p>Valores, estoque, peso final e condições de atendimento são confirmados pela loja no WhatsApp.</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frigorifico Carne Boa | Cortes e pedidos no WhatsApp</title>
+    <meta
+      name="description"
+      content="Frigorifico Carne Boa em Belem do Para. Escolha seus cortes, informe o peso em quilos e envie o pedido para a Loja 01 ou Loja 02 pelo WhatsApp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./script.css?v=20260314-1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="#inicio" aria-label="Ir para o inicio">
+          <img src="./assets/logo-carne-boa.png" alt="Logo Frigorifico Carne Boa" />
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Menu principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#localizacao">Localizacao</a>
+          <a href="#carrinho">Carrinho</a>
+          <a href="#lojas">Lojas</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="header-cta" href="#carrinho">Montar pedido</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <h1>Escolha o corte, informe os quilos e envie seu pedido para a loja certa.</h1>
+          <p>
+            Uma experiencia pensada para celular, com navegacao simples, carrinho por quilo e valores informados somente pelos canais oficiais no WhatsApp.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#carrinho">Fazer pedido</a>
+            <a class="btn btn-secondary" href="#localizacao">Ver localizacao</a>
+          </div>
+
+          <div class="hero-points">
+            <span>Pedido por quilo</span>
+            <span>Loja 01 e Loja 02</span>
+            <span>Valores so no WhatsApp</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-photo-card">
+              <img src="./assets/foto-loja-1.jpeg" alt="Interior da loja Frigorifico Carne Boa" />
+            </div>
+
+            <div class="hero-floating hero-floating-meat">
+              <img src="./assets/carne-alcatra-inteira.jpeg" alt="Corte de carne bovina" />
+            </div>
+
+            <div class="hero-floating hero-floating-note">
+              <strong>Pedido simples</strong>
+              <span>Escolha o corte, informe o peso e adicione ao carrinho. Envie para o WhatsApp.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="contato">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Canais diretos</p>
+              <h2>Fale com a unidade</h2>
+            </div>
+          </div>
+
+          <div class="contact-cards">
+            <a class="contact-card whatsapp-button" href="https://wa.me/5591981636475" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp da Loja 01">
+              <div class="social-button-content">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2C6.5 2 2 6.49 2 12.02c0 1.77.46 3.49 1.33 5.01L2 22l5.11-1.3a10 10 0 0 0 4.9 1.25h.01c5.52 0 10.01-4.49 10.01-10.02a9.95 9.95 0 0 0-2.98-6.99ZM12.02 20.26h-.01a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.04.77.81-2.96-.2-.31a8.31 8.31 0 1 1 6.97 3.84Zm4.56-6.22c-.25-.13-1.47-.72-1.7-.8-.23-.08-.39-.13-.56.12-.17.25-.65.8-.79.97-.15.17-.29.19-.54.06-.25-.13-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.38-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.09s.91 2.43 1.03 2.59c.13.17 1.78 2.72 4.31 3.81.6.26 1.08.42 1.45.54.61.19 1.16.16 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29Z"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Loja 01</strong>
+                  <span>(91) 98163-6475</span>
+                </div>
+              </div>
+              <small>Abertura direta no WhatsApp da Loja 01</small>
+            </a>
+
+            <a class="contact-card whatsapp-button" href="https://wa.me/5591988648944" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp da Loja 02">
+              <div class="social-button-content">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2C6.5 2 2 6.49 2 12.02c0 1.77.46 3.49 1.33 5.01L2 22l5.11-1.3a10 10 0 0 0 4.9 1.25h.01c5.52 0 10.01-4.49 10.01-10.02a9.95 9.95 0 0 0-2.98-6.99ZM12.02 20.26h-.01a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.04.77.81-2.96-.2-.31a8.31 8.31 0 1 1 6.97 3.84Zm4.56-6.22c-.25-.13-1.47-.72-1.7-.8-.23-.08-.39-.13-.56.12-.17.25-.65.8-.79.97-.15.17-.29.19-.54.06-.25-.13-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.38-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.09s.91 2.43 1.03 2.59c.13.17 1.78 2.72 4.31 3.81.6.26 1.08.42 1.45.54.61.19 1.16.16 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29Z"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Loja 02</strong>
+                  <span>(91) 98864-8944</span>
+                </div>
+              </div>
+              <small>Abertura direta no WhatsApp da Loja 02</small>
+            </a>
+
+            <a class="contact-card instagram-button" href="https://www.instagram.com/frigorificocarneboa_?igsh=MWVnMTdpbHR1dDZrOA==" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram do Frigorifico Carne Boa">
+              <div class="social-button-content">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.88 1.12a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26ZM12 6.5A5.5 5.5 0 1 1 6.5 12 5.5 5.5 0 0 1 12 6.5Zm0 1.5A4 4 0 1 0 16 12a4 4 0 0 0-4-4Z"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Instagram oficial</strong>
+                  <span>@frigorificocarneboa_</span>
+                </div>
+              </div>
+              <small>Acompanhe novidades e conteudo da marca</small>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-location" id="localizacao">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Localizacao e mapa</p>
+              <h2>Veja onde estamos e fale com a unidade mais conveniente</h2>
+            </div>
+          </div>
+
+          <div class="location-grid">
+            <div class="location-copy">
+              <article class="info-card">
+                <h3>Endereco principal</h3>
+                <p>Av. Rodolfo Chermont 1146, Belem, Brazil</p>
+                <p>Use o carrinho para montar seu pedido e depois escolha Loja 01 ou Loja 02 para receber o orcamento pelo WhatsApp.</p>
+              </article>
+
+              <article class="spotlight-card">
+                <img src="./assets/foto-loja-1.jpeg" alt="Frente e ambiente interno da loja Carne Boa" />
+                <div>
+                  <h3>Atendimento local e digital</h3>
+                  <p>Voce pode visitar a loja ou enviar o pedido online. O site organiza os itens e o orcamento segue pelo canal oficial.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="map-card">
+              <iframe
+                title="Mapa da localizacao do Frigorifico Carne Boa"
+                src="https://www.google.com/maps?q=Av.%20Rodolfo%20Chermont%201146%2C%20Belem&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-order" id="carrinho">
+        <div class="container order-layout">
+          <div class="order-copy">
+            <p class="section-kicker">Carrinho e orcamento</p>
+            <h2>Monte o carrinho e solicite o orcamento da loja</h2>
+            <p>
+              Nenhum valor aparece no site. Os itens do carrinho sao enviados para a unidade escolhida, que responde com o orcamento diretamente pelo WhatsApp.
+            </p>
+            <div class="cart-rule">
+              <strong>Regra do site</strong>
+              <span>Qualquer referencia a valores deve ser tratada somente pelos canais de WhatsApp.</span>
+            </div>
+          </div>
+
+          <form class="order-form" id="order-form">
             <div class="field-group">
               <label for="customer-name">Seu nome</label>
               <input id="customer-name" name="customer-name" type="text" placeholder="Digite seu nome" required />
@@ -15,7 +195,7 @@
             <div class="field-grid">
               <div class="field-group">
                 <label for="customer-address">Endereco</label>
-                <input id="customer-address" name="customer-address" type="text" placeholder="Opcional: consulte entrega com a loja" />
+                <input id="customer-address" name="customer-address" type="text" placeholder="Rua, numero, bairro" required />
               </div>
 
               <div class="field-group">
@@ -94,10 +274,64 @@
               <textarea id="order-notes" name="order-notes" rows="4" placeholder="Ex: cortar em bifes, separar gordura, entregar hoje..."></textarea>
             </div>
 
-            <button class="btn btn-primary form-submit" type="submit">Revisar meu pedido</button>
-          </form></aside></div></div></section>
-<section id="lojas" class="section units"><div class="container"><div class="section-heading"><p class="eyebrow">PERTINHO DE VOCÊ</p><h2>Fale com a sua unidade.</h2><p>Escolha a loja para consultar cortes, valores e condições de atendimento.</p></div><div class="unit-grid"><a class="unit" href="https://wa.me/5591981636475" target="_blank" rel="noopener noreferrer"><span>LOJA 01</span><h3>(91) 98163-6475</h3><p>Conversar no WhatsApp <span aria-hidden="true">↗</span></p></a><a class="unit" href="https://wa.me/5591988648944" target="_blank" rel="noopener noreferrer"><span>LOJA 02</span><h3>(91) 98864-8944</h3><p>Conversar no WhatsApp <span aria-hidden="true">↗</span></p></a></div></div></section>
-<section id="localizacao" class="section"><div class="container location-grid"><div><p class="eyebrow">VENHA NOS VISITAR</p><h2>Carne Boa em Belém.</h2><address>Av. Rodolfo Chermont, 1146<br>Belém, Pará</address><a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Av.+Rodolfo+Chermont+1146+Belem" target="_blank" rel="noopener noreferrer">Abrir rota no mapa ↗</a><p class="muted">Confirme com a unidade o endereço de retirada e as condições de entrega.</p></div><iframe title="Localização do endereço principal da Carne Boa" src="https://www.google.com/maps?q=Av.%20Rodolfo%20Chermont%201146%2C%20Belem&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></section></main>
-<footer id="contato"><div class="container footer-inner"><div><strong>Frigorífico Carne Boa</strong><p>Para o dia a dia e o churrasco.</p></div><a href="https://www.instagram.com/frigorificocarneboa_/" target="_blank" rel="noopener noreferrer">Acompanhe no Instagram ↗</a><a href="#inicio">Voltar ao início ↑</a></div></footer>
-<dialog id="order-review" aria-labelledby="review-title"><h2 id="review-title">Confira sua lista</h2><p>A loja confirmará valores, disponibilidade e preparo.</p><pre></pre><form method="dialog"><button class="btn btn-secondary">Voltar e editar</button><a class="btn btn-primary" target="_blank" rel="noopener noreferrer">Continuar no WhatsApp ↗</a></form></dialog>
-<script src="script.js?v=20261114-6"></script></body></html>
+            <button class="btn btn-primary form-submit" type="submit">Solicitar orcamento no WhatsApp</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-stores" id="lojas">
+        <div class="container stores-layout">
+          <div class="stores-copy">
+            <p class="section-kicker">Nossas unidades</p>
+            <h2>Duas lojas prontas para atender</h2>
+            <p>
+              A marca agora tem uma estrutura visual mais clara para navegacao em telas pequenas, mantendo o acesso rapido as duas unidades.
+            </p>
+
+            <div class="store-list">
+              <a class="store-item" href="https://wa.me/5591981636475" target="_blank" rel="noopener noreferrer">
+                <strong>Loja 01</strong>
+                <span>WhatsApp: (91) 98163-6475</span>
+              </a>
+              <a class="store-item" href="https://wa.me/5591988648944" target="_blank" rel="noopener noreferrer">
+                <strong>Loja 02</strong>
+                <span>WhatsApp: (91) 98864-8944</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="stores-gallery">
+            <div class="store-photo">
+              <img src="./assets/foto-loja-1.jpeg" alt="Ambiente interno da loja Carne Boa" />
+            </div>
+            <div class="store-logo-card">
+              <img src="./assets/logo-carne-boa.png" alt="Logo Carne Boa" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>
+          <strong>Frigorifico Carne Boa</strong>
+          <p>Av. Rodolfo Chermont 1146, Belem, Brazil</p>
+          <p>&copy; 2026. Todos os direitos reservados.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Menu do rodape">
+          <a href="#inicio">Inicio</a>
+          <a href="#localizacao">Localizacao</a>
+          <a href="#carrinho">Carrinho</a>
+          <a href="#lojas">Lojas</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="#carrinho" aria-label="Ir para o carrinho">+</a>
+
+    <script src="./script.js?v=20260314-1"></script>
+  </body>
+</html>

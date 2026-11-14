@@ -4,7 +4,8 @@ body{background:linear-gradient(180deg,#f6f9ff,#e6effc)}
 .site-header{background:#073b8e!important;border-bottom:3px solid #f2ca35;backdrop-filter:none}
 .main-nav a{color:#fff}
 .header-cta{background:#f2ca35;color:#092e68;box-shadow:none}
-.hero{background-color:#0d4ca5}
+.hero{background-color:#0d4ca5;isolation:isolate}
+.hero::before{z-index:0;background:url('./assets/foto-loja-1.jpeg') center/cover no-repeat;filter:none}
 .hero-points span{border-color:#f2ca3570}
 .section-soft{background:#e3edfc}
 .section-kicker{background:#d5e5ff;color:#123f86}
@@ -22,7 +23,7 @@ body{background:linear-gradient(180deg,#f6f9ff,#e6effc)}
 .footer-nav a{color:#e0ebff}
 .btn-primary{background:#b52127;color:#fff}
 .btn-primary:hover{background:#8f171d}
-.hero::after{background:linear-gradient(90deg,rgba(3,28,78,.78),rgba(7,54,125,.48) 55%,rgba(12,77,170,.12))!important}
+.hero::after{z-index:0;background:linear-gradient(90deg,rgba(3,28,78,.76),rgba(7,54,125,.46) 55%,rgba(12,77,170,.18))!important}
 .hero .btn-secondary{background:#164f9e;color:#fff;border-color:#74a0df}
 .hero-floating-note{background:#e9f1ff;color:#103b7b}
 .site-footer,footer{background:#073574;color:#fff}

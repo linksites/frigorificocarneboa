@@ -35,7 +35,8 @@ if (menuToggle && mainNav) {
 
 function formatCartCount() {
   const totalItems = cart.length;
-  cartCountElement.textContent = `${totalItems} ${totalItems === 1 ? "item" : "itens"}`;
+  const totalWeight = cart.reduce((sum,item) => sum + item.weight,0);
+  cartCountElement.textContent = `${totalItems} ${totalItems === 1 ? "item" : "itens"} · ${totalWeight.toLocaleString('pt-BR')} kg`;
 }
 
 function renderCart() {
@@ -92,6 +93,7 @@ function renderCart() {
       if (Number.isFinite(value) && value >= 0.5 && input.validity.valid) {
         cart[index].weight = value;
         persistCart();
+        formatCartCount();
       }
     });
   });
@@ -164,7 +166,7 @@ if (orderForm) {
       "Ola! Quero solicitar um orcamento no Frigorifico Carne Boa.",
       `Loja escolhida: ${storeName}`,
       `Nome: ${name}`,
-      `Endereco: ${address}`,
+      address ? `Endereco para consultar entrega: ${address}` : 'Retirada/entrega: combinar com a loja.',
       "Itens do carrinho:",
       items,
       `Preparo desejado: ${preparation}. Confirmar com a loja.`,

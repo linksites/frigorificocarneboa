@@ -22,7 +22,7 @@ body{background:linear-gradient(180deg,#f6f9ff,#e6effc)}
 .footer-nav a{color:#e0ebff}
 .btn-primary{background:#b52127;color:#fff}
 .btn-primary:hover{background:#8f171d}
-.hero::after{background:linear-gradient(90deg,rgba(3,36,101,.95),rgba(7,65,154,.8) 55%,rgba(12,77,170,.58))!important}
+.hero::after{background:linear-gradient(90deg,rgba(3,28,78,.78),rgba(7,54,125,.48) 55%,rgba(12,77,170,.12))!important}
 .hero .btn-secondary{background:#164f9e;color:#fff;border-color:#74a0df}
 .hero-floating-note{background:#e9f1ff;color:#103b7b}
 .site-footer,footer{background:#073574;color:#fff}

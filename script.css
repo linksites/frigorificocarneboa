@@ -1,3 +1,13 @@
+.catalog-panel { grid-column:1/-1; padding:24px; background:#fff; border:1px solid #ddd; border-radius:8px; margin-bottom:24px; }
+.catalog-panel label { display:block; margin:16px 0 6px; font-weight:700; }
+.catalog-panel input,.catalog-panel select { width:100%; min-height:44px; padding:10px; border:1px solid #ccc; border-radius:6px; }
+.catalog-items { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:20px; }
+.catalog-items article { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px; border:1px solid #ddd; border-radius:6px; min-width:0; }
+.catalog-items strong { overflow-wrap:anywhere; }
+.catalog-items button { flex-shrink:0; min-height:44px; padding:8px 12px; border:0; background:#a52322; color:white; border-radius:6px; cursor:pointer; }
+#catalog-feedback { min-height:24px; margin-top:12px; color:#295b47; }
+@media(max-width:800px){.catalog-items{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.catalog-items{grid-template-columns:1fr}.catalog-panel{padding:16px}}
 :root {
   --bg: #f4efe7;
   --surface: rgba(255, 250, 244, 0.88);

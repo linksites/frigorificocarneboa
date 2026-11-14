@@ -42,9 +42,9 @@
       <section class="hero" id="inicio">
         <div class="container hero-layout">
           <div class="hero-copy">
-            <h1>Escolha o corte, informe os quilos e envie seu pedido para a loja certa.</h1>
+            <h1>Frigorífico Carne Boa</h1>
           <p>
-            Uma experiencia pensada para celular, com navegacao simples, carrinho por quilo e valores informados somente pelos canais oficiais no WhatsApp.
+            Seus cortes para o dia a dia e o churrasco. Monte sua lista e consulte valores e disponibilidade com a unidade escolhida.
           </p>
 
           <div class="hero-actions">
@@ -186,7 +186,9 @@
             </div>
           </div>
 
+          <div id="catalog" class="catalog-panel"><h3>Escolha seus cortes</h3><label for="catalog-search">Buscar corte</label><input id="catalog-search" type="search" placeholder="Ex.: alcatra, frango, costela"><label for="catalog-category">Categoria</label><select id="catalog-category"><option>Todos</option><option>Bovinos</option><option>Aves</option><option>Linguiças</option><option>Miúdos</option></select><div id="catalog-items" class="catalog-items"></div><p id="catalog-feedback" role="status" aria-live="polite"></p></div>
           <form class="order-form" id="order-form">
+            <p>Valores, estoque, peso final e condições de atendimento são confirmados pela loja no WhatsApp.</p>
             <div class="field-group">
               <label for="customer-name">Seu nome</label>
               <input id="customer-name" name="customer-name" type="text" placeholder="Digite seu nome" required />
@@ -195,7 +197,7 @@
             <div class="field-grid">
               <div class="field-group">
                 <label for="customer-address">Endereco</label>
-                <input id="customer-address" name="customer-address" type="text" placeholder="Rua, numero, bairro" required />
+                <input id="customer-address" name="customer-address" type="text" placeholder="Opcional: consulte entrega com a loja" />
               </div>
 
               <div class="field-group">
@@ -251,6 +253,8 @@
               </div>
 
               <div class="field-group">
+                <label for="quick-preparation">Preparo desejado (sujeito a confirmação)</label>
+                <select id="quick-preparation"><option>Sem preferência</option><option>Em bifes</option><option>Em cubos</option><option>Peça inteira</option><option>Moída</option></select>
                 <label for="quick-weight">Peso inicial em kg</label>
                 <div class="inline-field">
                   <input id="quick-weight" name="quick-weight" type="number" min="0.5" step="0.5" placeholder="Ex: 2.5" />

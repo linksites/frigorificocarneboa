@@ -1,0 +1,47 @@
+:root{--bg:#f5f6f7;--surface:#fff;--surface-strong:#fff;--white:#fff;--ink:#202326;--muted:#61676b;--line:#e0e3e5;--brand:#a52322;--radius-xl:8px;--radius-lg:8px;--radius-md:6px;--radius-sm:6px;--shadow:none;--shadow-soft:none;--shadow-lift:0 4px 12px #0000000a}
+body{background:#fff;min-width:0}
+.site-header{background:#fff;border-bottom:1px solid var(--line);backdrop-filter:none}
+.main-nav a{color:var(--ink)}
+.header-row{min-height:84px}
+.brand img{width:120px}
+.header-cta,.btn{border-radius:6px;box-shadow:none}
+.header-cta,.btn-primary{background:#a52322;color:#fff}
+.menu-toggle{color:#202326;border-color:#d5d9dc;background:#f5f6f7;border-radius:6px}
+.hero{background:#f5f6f7;padding:48px 0}
+.hero::before,.hero::after{display:none}
+.hero-layout{gap:40px}
+.hero-copy h1{font-size:3rem;line-height:1.12;color:#202326;letter-spacing:0}
+.hero-copy p{color:#61676b;font-size:1.05rem;max-width:56ch}
+.hero-copy{color:#202326}
+.hero-points span{background:#fff;color:#444;border:1px solid #ddd;border-radius:4px;box-shadow:none}
+.hero-photo-card{border-radius:8px;box-shadow:none;border:1px solid #ddd}
+.hero-photo-card img{min-height:0;height:auto;aspect-ratio:4/3;object-fit:cover}
+.hero-floating{display:none}
+.section{padding:48px 0}
+.section-soft{background:#fff}
+.section-heading{margin-bottom:24px}
+.section-kicker{background:none;color:#a52322;padding:0;border-radius:0;letter-spacing:0;font-size:.75rem}
+.section-heading h2,.stores-copy h2{font-size:2rem;line-height:1.2;letter-spacing:0;max-width:800px}
+.contact-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.contact-card,.whatsapp-button,.instagram-button{background:#fff;border:1px solid #dfe3e5;border-radius:8px;box-shadow:none;padding:20px;min-height:0;color:#202326;transform:none}
+.contact-card::before{display:none}
+.contact-card:hover{background:#f7f8f8;border-color:#a52322;box-shadow:none;transform:none}
+.whatsapp-button strong,.whatsapp-button span,.whatsapp-button small,.instagram-button strong,.instagram-button span,.instagram-button small{color:#202326}
+.contact-card strong{font-size:1rem}
+.contact-card span,.contact-card small{font-size:.875rem}
+.contact-card small{margin-top:16px;padding-top:12px;border-top:1px solid #eee}
+.social-icon{background:#f3f5f4;border:0;border-radius:6px;color:#295b47}
+.location-card,.location-photo,.map-card,.order-form,.cart-panel,.store-item,.store-photo,.store-logo-card{border-radius:8px;box-shadow:none;border-color:#e0e3e5}
+.section-order{background:#f5f6f7}
+.order-form{background:#fff}
+.catalog-panel{background:#fff}
+.catalog-items button{font-weight:700}
+.field-group input,.field-group select,.field-group textarea{border-radius:6px}
+button,a,input,select,textarea{touch-action:manipulation}
+:focus-visible{outline:3px solid #a52322;outline-offset:3px}
+img{max-width:100%}
+h1,h2,h3,p,a{overflow-wrap:break-word}
+.hero-layout>*,.order-layout>*,.contact-cards>*{min-width:0}
+@media(max-width:900px){.contact-cards{grid-template-columns:1fr}.hero-copy h1{font-size:2.5rem}.main-nav{background:#fff}.main-nav a{color:#202326}}
+@media(max-width:560px){.hero{padding:32px 0}.hero-copy h1{font-size:2rem}.section-heading h2,.stores-copy h2{font-size:1.6rem}.section{padding:32px 0}.brand img{width:96px}.contact-card{padding:16px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

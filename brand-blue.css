@@ -1,7 +1,7 @@
 /* Carne Boa: blue identity inspired by the existing logo. */
 :root{--bg:#eef4fc;--surface:rgba(255,255,255,.94);--surface-strong:#fff;--white:#fff;--ink:#132b52;--muted:#4e6480;--accent:#f2ca35;--accent-soft:#fff4bc;--forest:#1253b1;--forest-soft:#dceaff;--line:rgba(20,68,143,.16);--shadow:0 20px 44px rgba(10,49,110,.12);--shadow-soft:0 8px 24px rgba(10,49,110,.08)}
 body{background:linear-gradient(180deg,#f6f9ff,#e6effc)}
-.site-header{background:#073b8e;border-bottom:3px solid #f2ca35;backdrop-filter:none}
+.site-header{background:#073b8e!important;border-bottom:3px solid #f2ca35;backdrop-filter:none}
 .main-nav a{color:#fff}
 .header-cta{background:#f2ca35;color:#092e68;box-shadow:none}
 .hero{background-color:#0d4ca5}
@@ -22,5 +22,8 @@ body{background:linear-gradient(180deg,#f6f9ff,#e6effc)}
 .footer-nav a{color:#e0ebff}
 .btn-primary{background:#b52127;color:#fff}
 .btn-primary:hover{background:#8f171d}
-@media(min-width:1024px){.hero::after{background:linear-gradient(90deg,rgba(5,35,87,.92),rgba(8,57,133,.65) 55%,rgba(8,57,133,.22))}}
+.hero::after{background:linear-gradient(90deg,rgba(3,36,101,.95),rgba(7,65,154,.8) 55%,rgba(12,77,170,.58))!important}
+.hero .btn-secondary{background:#164f9e;color:#fff;border-color:#74a0df}
+.hero-floating-note{background:#e9f1ff;color:#103b7b}
+.site-footer,footer{background:#073574;color:#fff}
 @media(max-width:1023px){.main-nav{background:#073b8e}.main-nav a{color:#fff}}
